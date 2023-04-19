@@ -14,7 +14,7 @@ body {
 header {
     position: absolute;
     top: 40px;
-    left: 40px;
+    left: 84px;
 }
 
 /* Main */
@@ -25,8 +25,6 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    /* padding: 40px; */
-    /* gap: 80px; */
 }
 
 button {
@@ -105,13 +103,14 @@ textarea {
     border-radius: 32px;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
 }
 
 /** not-found **/
 .not-found {
     width: 100%;
-    margin: 50% 0;
-    display: none;
+    /* display: none; */
 }
 
 .muñeco {
@@ -143,7 +142,7 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* display: none; */
+    display: none;
 }
 
 .result p {
@@ -151,6 +150,7 @@ textarea {
 }
 
 .result button {
+    margin-top: 32px;
     width: 100%;
 }
 
@@ -166,10 +166,73 @@ footer p {
     line-height: 200%;
 }
 
+.line-break {
+    display: none;
+}
+
 
 /* Tablet size */
 @media screen and (max-width: 768px) {
- main {
-    flex-direction: column;
- }   
+    header {
+        top: 75px;
+        left: 40px;
+    }
+    
+    main {
+        flex-direction: column;
+    }
+
+    .input {
+        width: calc(100% - (80px));
+        padding: 200px 0 32px;
+        height: 100%;
+    }
+
+    .output {
+        width: calc(100% - (80px));
+        max-width: 100%;
+    }
+
+    .not-found {
+        margin: 0;
+    }
+
+    .muñeco {
+        display: none;
+    }
+}
+
+/* Phone size */
+@media screen and (max-width: 375px) {
+    header {
+        top: 24px;
+        left: 16px;
+    }
+
+    .input {
+        margin: 16px;
+        width: calc(100% - (32px));
+        padding: 136px 0 32px;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .input button {
+        width: 100%;
+    }
+
+    .output {
+        margin: 16px 16px 64px;
+        width: calc(100% - (32px));
+    }
+
+    footer p {
+        line-height: 150%;
+    }
+
+    .line-break {
+        display: inline;
+    }
 }
