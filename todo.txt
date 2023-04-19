@@ -1,0 +1,4 @@
+Resolver funcionalidad de copiar el resultado
+Refinar estética del output (antes y después de agregar el botón pegar)
+Agrega botón de pegar cuyo trabajo sea hacer que el contenido del textarea sea lo que hay en el portapapeles. Así puedo escribir algo, encriptar/desencriptar, copiar, pegar y encriptar/desencriptar sin tener que hacer nada más que apretar botones
+Agregar link a algun perfil en el footer

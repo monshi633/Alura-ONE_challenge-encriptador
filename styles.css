@@ -54,6 +54,7 @@ textarea {
     width: 100%;
     padding: 0;
     border: 0;
+    outline: none;
     border-color: none;
     font-family: Inter;
     font-weight: 400;
@@ -76,7 +77,7 @@ textarea {
     margin: 16px 0;
 }
 
-.botones {
+.buttons {
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -108,12 +109,12 @@ textarea {
 }
 
 /** not-found **/
-.not-found {
+#not-found {
     width: 100%;
     /* display: none; */
 }
 
-.muñeco {
+.doll {
     width: 100%;
 }
 
@@ -153,6 +154,10 @@ textarea {
     margin-top: 32px;
     width: 100%;
 }
+
+/* .result button:last-child {
+    display: none;
+} */
 
 /* Footer */
 footer {
@@ -197,7 +202,7 @@ footer p {
         margin: 0;
     }
 
-    .muñeco {
+    .doll {
         display: none;
     }
 }
@@ -215,7 +220,7 @@ footer p {
         padding: 136px 0 32px;
     }
 
-    .botones {
+    .buttons {
         flex-direction: column;
     }
 
