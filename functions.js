@@ -2,7 +2,7 @@ let input = document.getElementById("input-text");
 let output = document.getElementById("output-text");
 
 function onlyContainsLowercase(str) {
-    return /^[a-z/ /:;,.¿?¡!]+$/.test(str);
+    return /^[a-z0-9/ /:;,.¿?¡!]+$/.test(str);
 }
 
 function encrypt() {
@@ -22,6 +22,8 @@ function encrypt() {
     } else {
         alert("Recuerda, sólo letras minúsculas y sin acentos");
     }
+
+    document.getElementById("paste").style.display = "none";
 }
 
 function desencrypt() {
@@ -41,8 +43,18 @@ function desencrypt() {
     } else {
         alert("Recuerda, sólo letras minúsculas y sin acentos");
     }
+
+    document.getElementById("paste").style.display = "none";
 }
 
 function copy() {
+    let copyText = document.getElementById("output-text").innerText;
+    navigator.clipboard.writeText(copyText);
+    document.getElementById("paste").style.display = "block";
+}
 
+function paste() {
+    navigator.clipboard
+        .readText()
+        .then((clipText) => (input.value = clipText));
 }

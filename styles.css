@@ -85,14 +85,14 @@ textarea {
     width: 100%;
 }
 
-.input button:first-child {
-    background: #0A3871;
-    color: #FFFFFF;
-}
-
 .input button {
     width: 50%;
     background: #F3F5FC;
+}
+
+.input button:first-child {
+    background: #0A3871;
+    color: #FFFFFF;
 }
 
 /* Output */
@@ -111,7 +111,6 @@ textarea {
 /** not-found **/
 #not-found {
     width: 100%;
-    /* display: none; */
 }
 
 .doll {
@@ -140,6 +139,7 @@ textarea {
 /** result **/
 .result {
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -148,6 +148,9 @@ textarea {
 
 .result p {
     font-size: 24px;
+    min-height: 50px;
+    max-height: calc(100% - (200px));
+    overflow: auto;
 }
 
 .result button {
@@ -155,19 +158,26 @@ textarea {
     width: 100%;
 }
 
-/* .result button:last-child {
+.result button:last-child {
+    background: #0A3871;
+    color: #FFFFFF;
+    margin-top: 24px;
     display: none;
-} */
+}
 
 /* Footer */
 footer {
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     width: 100%;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 footer p {
-    text-align: center;
     line-height: 200%;
 }
 
@@ -175,6 +185,9 @@ footer p {
     display: none;
 }
 
+footer  a {
+    margin: 0 5px 0 10px;
+}
 
 /* Tablet size */
 @media screen and (max-width: 768px) {
@@ -207,6 +220,17 @@ footer p {
     }
 }
 
+/* Footer break */
+@media screen and (max-width: 521px){
+    .output {
+        margin-bottom: 64px;
+    }
+    
+    footer p {
+        line-height: 150%;
+    }
+}
+
 /* Phone size */
 @media screen and (max-width: 375px) {
     header {
@@ -231,13 +255,5 @@ footer p {
     .output {
         margin: 16px 16px 64px;
         width: calc(100% - (32px));
-    }
-
-    footer p {
-        line-height: 150%;
-    }
-
-    .line-break {
-        display: inline;
     }
 }
