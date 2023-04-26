@@ -28,14 +28,28 @@ main {
 }
 
 button {
-    background: #FFFFFF;
     border: 1px solid #0A3871;
+    background: #F3F5FC;
+    color: #0A3871;
     border-radius: 24px;
     padding: 24px;
     text-align: center;
-    color: #0A3871;
     font-size: 16px;
     line-height: 19px;
+    transition-duration: 0.4s;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.blue-button:hover {
+    background: #052051;
+}
+
+.grey-button:hover {
+    background: #CED4DA;
+}
+
+.white-button:hover {
+    background: #E9ECF8 !important;
 }
 
 /* Input */
@@ -87,10 +101,9 @@ textarea {
 
 .input button {
     width: 50%;
-    background: #F3F5FC;
 }
 
-.input button:first-child {
+.blue-button {
     background: #0A3871;
     color: #FFFFFF;
 }
@@ -151,6 +164,7 @@ textarea {
     min-height: 50px;
     max-height: calc(100% - (200px));
     overflow: auto;
+    overflow-wrap: break-word;
 }
 
 .result button {
@@ -158,9 +172,8 @@ textarea {
     width: 100%;
 }
 
-.result button:last-child {
-    background: #0A3871;
-    color: #FFFFFF;
+#paste {
+    background: #FFFFFF;
     margin-top: 24px;
     display: none;
 }
