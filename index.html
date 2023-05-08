@@ -18,27 +18,29 @@
         </header>
         <main>
             <section class="input">
-                <textarea name="input-text" id="input-text" autocomplete="off" placeholder="Ingrese el texto aquí"></textarea>
+                <textarea class="input__text" name="input-text" id="input-text" autocomplete="off" placeholder="Ingrese el texto aquí"></textarea>
                 <div>
                     <p>Sólo letras minúsculas y sin acentos</p>
-                    <div class="buttons">
-                        <button class="blue-button" id="encrypt" onclick="encrypt()">Encriptar</button>
-                        <button class="grey-button" id="desencrypt" onclick="desencrypt()">Desencriptar</button>
+                    <div class="input__buttons">
+                        <button class="input__buttons__button" id="encrypt" onclick="encrypt()">Encriptar</button>
+                        <button class="input__buttons__button button--main" id="desencrypt" onclick="desencrypt()">Desencriptar</button>
                     </div>
                 </div>
             </section>
             <section class="output">
-                <div id="not-found">
-                    <img class="doll" src="images/Muñeco.png" alt="imagen de muñeco con lupa">
-                    <div class="text-box">
+                <div class="output__not-found" id="not-found">
+                    <img class="output__not-found__doll" src="images/Muñeco.png" alt="imagen de muñeco con lupa">
+                    <div class="output__not-found__text-box">
                         <p>Ningún mensaje fue encontrado</p>
                         <p>Ingresa el texto que desees encriptar o desencriptar.</p>
                     </div>
                 </div>
-                <div class="result" id="result">
-                    <p class="output-text" id="output-text"></p>
-                    <button class="blue-button" id="copy" onclick="copy()">Copiar</button>
-                    <button class="white-button" id="paste" onclick="paste()">Pegar</button>
+                <div class="output__result" id="result">
+                    <p class="output__result__text" id="output-text"></p>
+                    <div class="output__result__buttons">
+                        <button class="output__result__buttons__button" id="copy" onclick="copy()">Copiar</button>
+                        <button class="output__result__buttons__button button--accent-2" id="paste" onclick="paste()">Pegar</button>
+                    </div>
                 </div>
             </section>
         </main>
