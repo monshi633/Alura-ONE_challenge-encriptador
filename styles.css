@@ -49,7 +49,7 @@ button {
 }
 
 .white-button:hover {
-    background: #E9ECF8 !important;
+    background: #E9ECF8;
 }
 
 /* Input */
@@ -172,7 +172,7 @@ textarea {
     width: 100%;
 }
 
-#paste {
+.white-button {
     background: #FFFFFF;
     margin-top: 24px;
     display: none;
