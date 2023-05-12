@@ -1,4 +1,3 @@
 Agregar animaciones/efectos a los botones
 
-git commit -m "Reformats classes as BEM standard, adds var colors"
 git commit -m "Improves footer behavior"
