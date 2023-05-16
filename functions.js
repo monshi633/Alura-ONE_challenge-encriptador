@@ -1,5 +1,6 @@
-let input = document.getElementById("input-text");
-let output = document.getElementById("output-text");
+const input = document.getElementById("input-text");
+const output = document.getElementById("output-text");
+const button = document.querySelectorAll("button");
 
 function onlyContainsLowercase(str) {
     return /^[a-z0-9/ /:;,.¿?¡!]+$/.test(str);
@@ -58,3 +59,10 @@ function paste() {
         .readText()
         .then((clipText) => (input.value = clipText));
 }
+
+button.forEach(element => element.addEventListener("click", (event) => {
+    element.classList.add("pulse");
+    setTimeout(function() {
+        element.classList.remove("pulse");
+    }, 800);
+}));
