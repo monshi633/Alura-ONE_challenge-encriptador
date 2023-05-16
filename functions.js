@@ -48,7 +48,7 @@ function desencrypt() {
 }
 
 function copy() {
-    let copyText = document.getElementById("output-text").innerText;
+    let copyText = output.innerText;
     navigator.clipboard.writeText(copyText);
     document.getElementById("paste").style.display = "block";
 }

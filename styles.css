@@ -165,6 +165,7 @@ main {
 
 .output__result__text {
     font-size: 24px;
+    padding: 5px;
     min-height: 50px;
     max-height: calc(100% - (200px));
     overflow: auto;
