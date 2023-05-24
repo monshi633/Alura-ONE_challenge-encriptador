@@ -3,7 +3,7 @@ const output = document.getElementById("output-text");
 const button = document.querySelectorAll("button");
 
 function onlyContainsLowercase(str) {
-    return /^[a-z0-9/ /:;,.¿?¡!]+$/.test(str);
+    return /^[a-z0-9/ /ñ:;,.¿?¡!]+$/.test(str);
 }
 
 function encrypt() {
