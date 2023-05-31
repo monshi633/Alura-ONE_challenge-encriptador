@@ -27,6 +27,32 @@ function encrypt() {
     document.getElementById("paste").style.display = "none";
 }
 
+function encryptMurcielago() {
+    const chars = {
+    "m": "0",
+    "u": "1",
+    "r": "2",
+    "c": "3",
+    "i": "4",
+    "e": "5",
+    "l": "6",
+    "a": "7",
+    "g": "8",
+    "o": "9"
+    }
+
+    if (onlyContainsLowercase(input.value)) {
+        let encriptedText = input.value.replace(/[murcielago]/g, c => chars[c]);
+        document.getElementById("not-found").style.display = "none";
+        document.getElementById("result").style.display = "block";
+        output.textContent = encriptedText;
+    } else {
+        alert("Recuerda, sólo letras minúsculas y sin acentos");
+    }
+
+    document.getElementById("paste").style.display = "none";
+}
+
 function desencrypt() {
     const chars = {
         "ai": "a",
@@ -38,6 +64,32 @@ function desencrypt() {
 
     if (onlyContainsLowercase(input.value)) {
         let desencriptedText = input.value.replace(/ai|enter|imes|ober|ufat/g, c => chars[c]);
+        document.getElementById("not-found").style.display = "none";
+        document.getElementById("result").style.display = "block";
+        output.textContent = desencriptedText;
+    } else {
+        alert("Recuerda, sólo letras minúsculas y sin acentos");
+    }
+
+    document.getElementById("paste").style.display = "none";
+}
+
+function desencryptMurcielago() {
+    const chars = {
+        "0": "m",
+        "1": "u",
+        "2": "r",
+        "3": "c",
+        "4": "i",
+        "5": "e",
+        "6": "l",
+        "7": "a",
+        "8": "g",
+        "9": "o"
+        }
+
+    if (onlyContainsLowercase(input.value)) {
+        let desencriptedText = input.value.replace(/[0-9]/g, c => chars[c]);
         document.getElementById("not-found").style.display = "none";
         document.getElementById("result").style.display = "block";
         output.textContent = desencriptedText;

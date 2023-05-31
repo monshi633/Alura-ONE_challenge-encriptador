@@ -1,10 +1,10 @@
 :root {
-    --color-main: #F3F5FC;
-    --color-accent-1: #0A3871;
-    --color-accent-2: #FFFFFF;
-    --color-accent-3: #495057;
-    --color-hover-1: #052051;
-    --color-hover-2: #CED4DA;
+    --color-main: #343A40;
+    --color-accent-1: #609ED4;
+    --color-accent-2: #495057;
+    --color-accent-3: #CED4DA;
+    --color-hover-1: #356EA9;
+    --color-hover-2: #0A3871;
 }
 
 * {
@@ -59,6 +59,10 @@ main {
     font-size: 32px;
     color: var(--color-accent-1);
     resize: none;
+}
+
+.input__text::placeholder {
+    color: var(--color-accent-3);
 }
 
 .input p::before {
