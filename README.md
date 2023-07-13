@@ -1,6 +1,14 @@
-# Alura-ONE_challenge-encriptador
-challengeonecodificador5
+<h1 align="center"> Encriptador de texto </h1>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Alura_ONE-Challenge%231-orange">
+  <img src="https://img.shields.io/badge/Status-finalizado-blue"><br>
+  <img src="https://img.shields.io/badge/HTML-orange">
+  <img src="https://img.shields.io/badge/CSS-blue">
+  <img src="https://img.shields.io/badge/JavaScript-yellow">
+</p>
+
+## Introducción
 Este proyecto es parte de un curso dictado por Alura y Oracle Next Education
 
 Cómo funciona:
@@ -8,7 +16,7 @@ Dada una entrada de texto se puede obtener una versión simplemente encriptada d
 Hay un "easter egg" escondido que te lleva a una versión oscura del mismo sitio que tiene un algoritmo de encriptación un poco más complejo (pero aún así no seguro para contraseñas).
 
 -------------------------------------------------------------------------
-
+## Introduction
 This project is part of a course given by Alura and Oracle Next Education
 
 How it works:
