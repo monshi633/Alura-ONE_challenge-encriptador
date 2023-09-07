@@ -22,3 +22,12 @@ This project is part of a course given by Alura and Oracle Next Education
 How it works:
 Given a text input, you can get back a simply-encrypted version of it where then you can copy it into your clipboard. Then you can choose to paste any encrypted text and get it desencrypted back.
 There's a hidden easter egg where it takes you to a dark-mode version of the same website but the encription algorithm changes to another a bit more complex (but still not password-level secure).
+
+## Agradecimientos
+🧡 <strong>Oracle</strong></br>
+<a href="https://www.linkedin.com/company/oracle/" target="_blank">
+<img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+
+💙 <strong>Alura Latam</strong></br>
+<a href="https://www.linkedin.com/company/alura-latam/mycompany/" target="_blank">
+<img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
