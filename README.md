@@ -20,8 +20,7 @@ Hay un "easter egg" escondido que te lleva a una versión oscura del mismo sitio
 This project is part of a course given by Alura and Oracle Next Education
 
 How it works:
-Given a text input, you can get back a simply-encrypted version of it where then you can copy it into your clipboard. Then you can choose to paste any encrypted text and get it desencrypted back.
-There's a hidden easter egg where it takes you to a dark-mode version of the same website but the encription algorithm changes to another a bit more complex (but still not password-level secure).
+Given a text input, you can get back a simply-encrypted version of it where then you can copy it into your clipboard. Then you can choose to paste any encrypted text and get it de-encrypted back. As a plus, I chose to add a hidden Easter egg where it takes you to a dark-mode version of the same website but the encryption algorithm changes to another a bit more complex (but still not password-level secure).
 
 ## Agradecimientos / Thanks to
 🧡 <strong>Oracle</strong></br>
